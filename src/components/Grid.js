@@ -1,8 +1,8 @@
 import React from "react";
-import sample from "../Assest/Nature-Amazing-Grace-600px-400px-2.jpg";
-import Image1 from "../Assest/image-1.jpg";
-import Image2 from "../Assest/image-2.jpg";
-import Image3 from "../Assest/image-3.jpg";
+import sample from "../Assest/image3.jpg";
+import Image1 from "../Assest/image4.jpg";
+import Image2 from "../Assest/image6.jpg";
+import Image3 from "../Assest/image1.jpg";
 
 function Grid() {
   return (

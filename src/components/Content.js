@@ -1,4 +1,5 @@
 import React from "react";
+import Titleimage from "../Assest/image5.jpg";
 
 function Content() {
   return (
@@ -6,7 +7,7 @@ function Content() {
       <div className="flex flex-col  overflow-hidden bg-white border rounded shadow-sm lg:flex-row sm:mx-auto">
         <div className="relative lg:w-1/2">
           <img
-            src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+            src={Titleimage}
             alt=""
             className="object-cover w-full lg:absolute h-80 lg:h-full"
           />
