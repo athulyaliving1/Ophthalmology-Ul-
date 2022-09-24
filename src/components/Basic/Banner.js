@@ -9,15 +9,15 @@ function Banner() {
     <div>
       <div>
         <img
-          className="w-full h-full bg-cover  md:block hidden pt-10 md:pt-16 lg:pt-20   "
+          className="hidden w-full h-full pt-10 bg-cover md:block md:pt-16 lg:pt-20 "
           src="https://www.athulyahomecare.com/lp/ophthalmology/Assest/Eyebanner.jpg"
           alt="banner "
         />
       </div>
-      {/* <div className="block md:hidden  ">
-        <div className="pt-10   ">
+      {/* <div className="block md:hidden ">
+        <div className="pt-10 ">
           <img
-            className="  w-full h-full  md:pt-12 md:hidden block"
+            className="block w-full h-full md:pt-12 md:hidden"
             src={mbbanner}
             alt="banner "
           />
@@ -26,7 +26,7 @@ function Banner() {
 
       <div className="absolute">
         <WhatsAppWidget
-          phoneNo="919884639400"
+          phoneNo="+919884639400"
           position="left"
           widgetWidth="300px"
           widgetWidthMobile="260px"

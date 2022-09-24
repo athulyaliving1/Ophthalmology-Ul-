@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 // import sample from "../Assest/image3.jpg";
 // import Image1 from "../Assest/image4.jpg";
 // import Image2 from "../Assest/image6.jpg";
 // import Image3 from "../Assest/image1.jpg";
 
 function Grid() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div className="">
       <div div class="  relative bg-zinc-100  ">
-        <div class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-12 lg:items-center container mx-auto">
+        <div
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration=""
+          class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-12 lg:items-center container mx-auto"
+        >
           <div class="lg:col-start-2 md:pl-20">
             <h4 class="text-2xl  lg:text-2xl   font-semibold text-sky-800 text-center font-Ubuntu leading-8  tracking-tight sm:leading-9  capitalize pt-5 ">
               Benefits of home visiting <span> </span>
