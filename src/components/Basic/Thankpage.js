@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Thankpic from "../../Assest/ophthalmology-3.jpg";
+
 
 function Thankpage() {
   return (
@@ -11,7 +11,7 @@ function Thankpage() {
             <img
               alt="feature"
               class="object-cover object-center h-full w-full"
-              src={Thankpic}
+              src="https://www.athulyahomecare.com/lp/ophthalmology/Assest/ophthalmology-3.jpg"
             />
           </div>
           <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden xl:mt-10 grid  gap-4 content-center ">
@@ -20,7 +20,8 @@ function Thankpage() {
                 <span className="relative inline-block ">
                   <span className="relative"> Your</span>
                 </span>
-                <span></span> form is <span className="text-pink-500">successfully submitted!</span>   
+                <span></span> form is{" "}
+                <span className="text-pink-500">successfully submitted!</span>
               </h2>
               <p className="text-base text-sky-800 md:text-lg xl:text-xl 2xl:text-xl font-semibold   font-Ubuntu">
                 Thank for your enquiring with us! Our Customer Service

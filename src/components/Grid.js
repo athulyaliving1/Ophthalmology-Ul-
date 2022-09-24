@@ -1,8 +1,7 @@
 import React from "react";
-import sample from "../Assest/image3.jpg";
-import Image1 from "../Assest/image4.jpg";
-import Image2 from "../Assest/image6.jpg";
-import Image3 from "../Assest/image1.jpg";
+
+
+
 
 function Grid() {
   return (
@@ -101,7 +100,7 @@ function Grid() {
           </div>
           <div class="mt-10 md:-mx-12 relative lg:mt-0 lg:col-start-1 ">
             <img
-              src={sample}
+              src="https://www.athulyahomecare.com/lp/ophthalmology/Assest/image3.jpg"
               alt="illustration Intrinsic size:	400 × 600 px"
               class="relative mx-auto shadow-lg rounded w-auto"
             />
@@ -115,15 +114,27 @@ function Grid() {
               <div class="-mx-3 flex items-center sm:-mx-4">
                 <div class="w-full px-3 sm:px-4 xl:w-1/2">
                   <div class="py-3 sm:py-4">
-                    <img src={Image1} alt="sample" class="w-full rounded-2xl" />
+                    <img
+                      src="https://www.athulyahomecare.com/lp/ophthalmology/Assest/image4.jpg"
+                      alt="sample"
+                      class="w-full rounded-2xl"
+                    />
                   </div>
                   <div class="py-3 sm:py-4">
-                    <img src={Image2} alt="sa,ple" class="w-full rounded-2xl" />
+                    <img
+                      src="https://www.athulyahomecare.com/lp/ophthalmology/Assest/image5.jpg"
+                      alt="sample"
+                      class="w-full rounded-2xl"
+                    />
                   </div>
                 </div>
                 <div class="w-full px-3 sm:px-4 xl:w-1/2">
                   <div class="relative z-10 my-4">
-                    <img src={Image3} alt="sample" class="w-full rounded-2xl" />
+                    <img
+                      src="https://www.athulyahomecare.com/lp/ophthalmology/Assest/image6.jpg"
+                      alt="sample"
+                      class="w-full rounded-2xl"
+                    />
                     {/* <span class="absolute -right-7 -bottom-7 z-[-1]">
                       <svg
                         width="134"

@@ -58,12 +58,15 @@ export default function XlForm() {
       });
     }
 
-    await axios.post("http://162.241.222.86:5000/contact", {
-      name,
-      number,
-      email,
-      textarea,
-    });
+    await axios.post(
+      "https://contact-app-server-athulya.herokuapp.com/contactophthalmologychennai",
+      {
+        name,
+        number,
+        email,
+        textarea,
+      }
+    );
 
     // Swal.fire({
     //   icon: "success",

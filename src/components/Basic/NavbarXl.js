@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../Assest/logo.png";
+// import Logo from "../../Assest/logo.png";
 
 function NavbarXl() {
   return (
@@ -9,11 +9,11 @@ function NavbarXl() {
           <div className="container mx-auto flex items-center ">
             <img
               className="xl:w-1/12 2xl:h-4/6  desktop:w-2/12  md:w-2/12 lg:w-2/12   w-5/12  mt-2 "
-              src={Logo}
+              src="https://www.athulyahomecare.com/lp/ophthalmology/Assest/logo.png"
               alt="logo"
             />
             <div class=" md:flex  fon   font-semibold   md:ml-auto">
-              <ul className="mt-5 lg:mt-5 md:flex  text-sky-900 font-Helvetica    space-x-5 ">
+              <ul className="mt-5 lg:mt-5 md:flex  text-sky-900 font-Helvetica   space-x-5 ">
                 <li className="flex  mb-3 md:mb-0 md:px-0">
                   <a
                     className="flex"
@@ -37,7 +37,7 @@ function NavbarXl() {
                 <li className="md:flex hidden ">
                   <a
                     className="flex"
-                    href="mailto:mailto:enquiry@athulyaliving.com"
+                    href="mailto:mailto:response@athulyahomecare.com"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -52,7 +52,7 @@ function NavbarXl() {
                         <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                       </svg>
                     </span>
-                    enquiry@athulyaliving.com
+                    response@athulyahomecare.com
                   </a>
                 </li>
               </ul>

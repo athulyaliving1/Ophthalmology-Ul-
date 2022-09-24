@@ -1,5 +1,5 @@
 import React from "react";
-import user from "../Assest/user.jpg";
+// import user from "../Assest/user.jpg";
 
 function TestimonialNew() {
   return (
@@ -124,7 +124,7 @@ function TestimonialNew() {
               </div>
             </div>
             <div className="flex flex-col items-center justify-center mt-10">
-              <img src={user} alt="profile pictre" className="w-12 h-12" />
+              <img src="https://www.athulyahomecare.com/lp/ophthalmology/Assest/user.jpg" alt="profile pictre" className="w-12 h-12" />
               <p className="text-base leading-4 text-center font-Helvetica font-semibold opacity-90 ">
                 Arivoli A
               </p>
@@ -249,7 +249,7 @@ function TestimonialNew() {
               </div>
             </div>
             <div className="flex flex-col items-center justify-center mt-10">
-              <img src={user} alt="profile pictre" className="w-12 h-12" />
+              <img src="https://www.athulyahomecare.com/lp/ophthalmology/Assest/user.jpg" alt="profile pictre" className="w-12 h-12" />
               <p className="text-base leading-4 text-center font-Helvetica font-semibold opacity-90 ">
                 Vishwa bal
               </p>
@@ -373,7 +373,7 @@ function TestimonialNew() {
               </div>
             </div>
             <div className="flex flex-col items-center justify-center mt-10">
-              <img src={user} alt="profile pictre" className="w-12 h-12" />
+              <img src="https://www.athulyahomecare.com/lp/ophthalmology/Assest/user.jpg"  alt="profile pictre" className="w-12 h-12" />
               <p className="text-base leading-4 text-center font-Helvetica font-semibold opacity-90 ">
                 Sathiya satz
               </p>

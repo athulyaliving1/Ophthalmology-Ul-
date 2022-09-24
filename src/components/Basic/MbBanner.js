@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import mbbanner from "../../Assest/Mbbanner.jpg";
+// import mbbanner from "../../Assest/Mbbanner.jpg";
 
 // import MbBanner1 from "../components/Assets/sm-banner.jpg";
 
@@ -67,7 +67,7 @@ function MbBanner() {
     }
 
     await axios.post(
-      "https://contact-app-server-athulya.herokuapp.com/contact",
+      "https://contact-app-server-athulya.herokuapp.com/contactophthalmologychennai",
       {
         name,
         number,
@@ -97,7 +97,10 @@ function MbBanner() {
             src="https://athulyahomecare.com/lp/images/sm-banner.png"
             alt="smpic"
           /> */}
-          <img src={mbbanner} alt="mbbanner" />
+          <img
+            src="https://www.athulyahomecare.com/lp/ophthalmology/Assest/Mbbanner.jpg"
+            alt="mbbanner"
+          />
         </div>
         <div className="container font-Ubuntu">
           <div className=" text-justify mt-5 mb-5 ">

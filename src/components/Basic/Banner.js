@@ -1,7 +1,7 @@
 import React from "react";
 import WhatsAppWidget from "react-whatsapp-chat-widget";
 import "react-whatsapp-chat-widget/index.css";
-import Eyebanner from "../../Assest/Eyebanner.jpg";
+// import Eyebanner from "../../Assest/Eyebanner.jpg";
 // import mbbanner from "../../Assest/Mbbanner.jpg";
 
 function Banner() {
@@ -10,7 +10,7 @@ function Banner() {
       <div>
         <img
           className="w-full h-full bg-cover  md:block hidden pt-10 md:pt-16 lg:pt-20   "
-          src={Eyebanner}
+          src="https://www.athulyahomecare.com/lp/ophthalmology/Assest/Eyebanner.jpg"
           alt="banner "
         />
       </div>
