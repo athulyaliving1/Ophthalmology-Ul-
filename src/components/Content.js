@@ -7,7 +7,7 @@ function Content() {
       <div className="flex flex-col  overflow-hidden bg-white border rounded shadow-sm lg:flex-row sm:mx-auto">
         <div className="relative lg:w-1/2">
           <img
-            src="https://www.athulyahomecare.com/lp/ophthalmology/Assest/image5.jpg"
+            src="https://www.athulyahomecare.com/lp/ophthalmology/Assest/eye.jpg"
             alt=""
             className="object-cover w-full lg:absolute h-80 lg:h-full"
           />

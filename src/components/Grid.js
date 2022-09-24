@@ -132,7 +132,7 @@ function Grid() {
                 <div class="w-full px-3 sm:px-4 xl:w-1/2">
                   <div class="relative z-10 my-4">
                     <img
-                      src="https://www.athulyahomecare.com/lp/ophthalmology/Assest/image1.jpg"
+                      src="https://www.athulyahomecare.com/lp/ophthalmology/Assest/eyes.jpg"
                       alt="sample"
                       class="w-full rounded-2xl"
                     />
