@@ -3,6 +3,8 @@ import React, { useEffect } from "react";
 // import Image1 from "../Assest/image4.jpg";
 // import Image2 from "../Assest/image6.jpg";
 // import Image3 from "../Assest/image1.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Grid() {
   useEffect(() => {
