@@ -1,8 +1,8 @@
 import React from "react";
-import sample from "../Assest/image3.jpg";
-import Image1 from "../Assest/image4.jpg";
-import Image2 from "../Assest/image6.jpg";
-import Image3 from "../Assest/image1.jpg";
+// import sample from "../Assest/image3.jpg";
+// import Image1 from "../Assest/image4.jpg";
+// import Image2 from "../Assest/image6.jpg";
+// import Image3 from "../Assest/image1.jpg";
 
 function Grid() {
   return (
