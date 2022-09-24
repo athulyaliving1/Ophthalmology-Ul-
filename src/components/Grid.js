@@ -1,7 +1,8 @@
 import React from "react";
-
-
-
+import sample from "../Assest/image3.jpg";
+import Image1 from "../Assest/image4.jpg";
+import Image2 from "../Assest/image6.jpg";
+import Image3 from "../Assest/image1.jpg";
 
 function Grid() {
   return (
@@ -122,7 +123,7 @@ function Grid() {
                   </div>
                   <div class="py-3 sm:py-4">
                     <img
-                      src="https://www.athulyahomecare.com/lp/ophthalmology/Assest/image5.jpg"
+                      src="https://www.athulyahomecare.com/lp/ophthalmology/Assest/image6.jpg"
                       alt="sample"
                       class="w-full rounded-2xl"
                     />
@@ -131,7 +132,7 @@ function Grid() {
                 <div class="w-full px-3 sm:px-4 xl:w-1/2">
                   <div class="relative z-10 my-4">
                     <img
-                      src="https://www.athulyahomecare.com/lp/ophthalmology/Assest/image6.jpg"
+                      src="https://www.athulyahomecare.com/lp/ophthalmology/Assest/image1.jpg"
                       alt="sample"
                       class="w-full rounded-2xl"
                     />
