@@ -67,7 +67,7 @@ function MbBanner() {
     }
 
     await axios.post(
-      "https://contact-app-server-athulya.herokuapp.com/contactophthalmologychennai",
+      "http://162.241.222.86:5000/contactophthalmologychennai",
       {
         name,
         number,
@@ -91,8 +91,8 @@ function MbBanner() {
   };
   return (
     <div>
-      <div className=" md:grid-cols-2 block md:hidden">
-        <div className="md:hidden block ss:pt-14 sl:pt-16  ">
+      <div className="block md:grid-cols-2 md:hidden">
+        <div className="block md:hidden ss:pt-14 sl:pt-16 ">
           {/* <img
             src="https://athulyahomecare.com/lp/images/sm-banner.png"
             alt="smpic"
@@ -103,8 +103,8 @@ function MbBanner() {
           />
         </div>
         <div className="container font-Ubuntu">
-          <div className=" text-justify mt-5 mb-5 ">
-            <h1 className="xl:text-3xl  flex justify-center text-xl font-Ubuntu  font-semibold  md:text-white  text-sky-800 md:p-5 p-2  ">
+          <div className="mt-5 mb-5 text-justify ">
+            <h1 className="flex justify-center p-2 text-xl font-semibold xl:text-3xl font-Ubuntu md:text-white text-sky-800 md:p-5 ">
               Submit Your Details
             </h1>
             <div>
@@ -122,7 +122,7 @@ function MbBanner() {
                           class="block py-2.5 px-0 w-full text-xl font-semibold   text-gray-900 bg-transparent border-0 border-b-2 border-sky-900 appearance-none focus:outline-none focus:ring-0 focus:border-sky-800 peer"
                           placeholder=" "
                         />
-                        <p className="text-pink-500  font-semibold">
+                        <p className="font-semibold text-pink-500">
                           {errors.name?.message}
                         </p>
                         <label
@@ -142,7 +142,7 @@ function MbBanner() {
                           class="block py-2.5 px-0 w-full text-lg font-semibold  text-gray-900 bg-transparent border-0 border-b-2 border-sky-900 appearance-none   focus:outline-none focus:ring-0 focus:border-sky-800 peer"
                           placeholder=" "
                         />
-                        <p className="text-pink-500 font-Poppins font-semibold">
+                        <p className="font-semibold text-pink-500 font-Poppins">
                           {errors.email?.message}
                         </p>
                         <label
@@ -162,7 +162,7 @@ function MbBanner() {
                           class="block py-2.5 px-0 w-full  text-lg   font-semibold  text-gray-900 bg-transparent border-0 border-b-2 border-sky-900 appearance-none   focus:outline-none focus:ring-0 focus:border-sky-800 peer"
                           placeholder=" "
                         />
-                        <p className="text-pink-500 font-Poppins font-semibold">
+                        <p className="font-semibold text-pink-500 font-Poppins">
                           {errors.number?.message}
                         </p>
                         <label
@@ -174,7 +174,7 @@ function MbBanner() {
                       </div>
                       <div class="flex flex-col mt-2">
                         <label
-                          className="text-sky-800  text-lg font-semibold"
+                          className="text-lg font-semibold text-sky-800"
                           htmlFor="textarea"
                         >
                           Message
@@ -187,11 +187,11 @@ function MbBanner() {
                           rows="4"
                           class="peer   w-100 mt-2 py-3 px-3 rounded-lg bg-zinc-100  border-2   border-sky-800   font-semibold focus:border-sky-700 focus:outline-none"
                         />
-                        <p className="text-pink-500 font-Poppins font-semibold">
+                        <p className="font-semibold text-pink-500 font-Poppins">
                           {errors.textarea?.message}
                         </p>
                       </div>
-                      <div className="flex justify-center  md:py-1">
+                      <div className="flex justify-center md:py-1">
                         <button class="  rounded-md py-3 px-6 m-1 overflow-hidden relative group cursor-pointer border-2  border-sky-800  text-white bg-pink-500 font-bold">
                           <span class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-sky-900 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
                           <span class="relative  text-white transition duration-300 group-hover:text-white ease">

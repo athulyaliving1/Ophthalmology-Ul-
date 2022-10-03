@@ -14,9 +14,7 @@ function Grid() {
     <div className="">
       <div div class="  relative bg-zinc-100  ">
         <div
-          data-aos="fade-up"
-          data-aos-easing="linear"
-          data-aos-duration=""
+
           class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-12 lg:items-center container mx-auto"
         >
           <div class="lg:col-start-2 md:pl-20">
@@ -109,7 +107,7 @@ function Grid() {
               </li>
             </ul>
           </div>
-          <div class="mt-10 md:-mx-12 relative lg:mt-0 lg:col-start-1 ">
+          <div data-aos="flip-right" class="mt-10 md:-mx-12 relative lg:mt-0 lg:col-start-1 ">
             <img
               src="https://www.athulyahomecare.com/lp/ophthalmology/Assest/image3.jpg"
               alt="illustration Intrinsic size:	400 × 600 px"
@@ -118,20 +116,25 @@ function Grid() {
           </div>
         </div>
       </div>
-      <section class="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] container mx-auto ">
+      <section
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="2000"
+        class="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] container mx-auto "
+      >
         <div class="">
           <div class="-mx-4 flex flex-wrap items-center justify-between">
             <div class="w-full px-4 lg:w-6/12">
               <div class="-mx-3 flex items-center sm:-mx-4">
                 <div class="w-full px-3 sm:px-4 xl:w-1/2">
-                  <div class="py-3 sm:py-4">
+                  <div data-aos="flip-right" class="py-3 sm:py-4">
                     <img
                       src="https://www.athulyahomecare.com/lp/ophthalmology/Assest/image4.jpg"
                       alt="sample"
                       class="w-full rounded-2xl"
                     />
                   </div>
-                  <div class="py-3 sm:py-4">
+                  <div data-aos="flip-left" class="py-3 sm:py-4">
                     <img
                       src="https://www.athulyahomecare.com/lp/ophthalmology/Assest/image6.jpg"
                       alt="sample"
@@ -140,7 +143,7 @@ function Grid() {
                   </div>
                 </div>
                 <div class="w-full px-3 sm:px-4 xl:w-1/2">
-                  <div class="relative z-10 my-4">
+                  <div data-aos="flip-right" class="relative z-10 my-4">
                     <img
                       src="https://www.athulyahomecare.com/lp/ophthalmology/Assest/eyes.jpg"
                       alt="sample"
@@ -720,12 +723,14 @@ function Grid() {
                 </div>
               </div>
             </div>
-            <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
-              <div class="mt-10 lg:mt-0">
-                <span class="mb-2 block text-xl lg:text-2xl   font-semibold text-sky-800 text-center font-Ubuntu">
+            <div class="w-full px-4 lg:w-1/2 xl:w-5/12 ">
+              <div class="mt-10 lg:mt-0 ">
+
+                <span class="mb-2 block text-xl lg:text-2xl   font-semibold text-sky-800 text-center font-Ubuntu ">
                   Why Choose Athulya's Doctor at <span> </span>
                   <span className="text-pink-500">Home Service?</span>
                 </span>
+
 
                 <p class="mb-8 md:text-xl text-gray-800 font-Ubuntu font-semibold opacity-90  text-justify ">
                   A competent interdisciplinary team at Athulya makes it

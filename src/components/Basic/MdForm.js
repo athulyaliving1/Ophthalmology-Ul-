@@ -4,6 +4,8 @@ import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
+
 
 const phoneRegExp =
   /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
@@ -33,6 +35,7 @@ const schema = yup
 
 function MdForm() {
   // const [status, setStatus] = useState("Submit");
+  let navigate = useNavigate();
   const [name, setName] = useState("");
   const [number, setNumber] = useState("");
   const [email, setEmail] = useState("");
@@ -57,7 +60,7 @@ function MdForm() {
     }
 
     await axios.post(
-      "https://contact-app-server-athulya.herokuapp.com/contactophthalmologychennai",
+      "http://162.241.222.86:5000/contactophthalmologychennai",
       {
         name,
         number,
@@ -66,13 +69,17 @@ function MdForm() {
       }
     );
 
-    Swal.fire({
-      icon: "success",
-      title: "Our Message Has Been Sent!",
-      text: "Our Team Will Contact You Shortly  ",
-      showConfirmButton: false,
-      timer: 2000,
-    });
+    // Swal.fire({
+    //   icon: "success",
+    //   title: "Our Message Has Been Sent!",
+    //   text: "Our Team Will Contact You Shortly  ",
+    //   showConfirmButton: false,
+    //   timer: 2000,
+    // });
+    navigate("/tkpage");
+
+
+
 
     setTimeout(function () {
       window.location.reload(1);
@@ -81,8 +88,8 @@ function MdForm() {
   return (
     <div className="bg-sky-900">
       {/* Md devices */}
-      <div className="container mx-auto hidden 2xl:hidden md:block xl:hidden font-Ubuntu  ">
-        <div className="grid-rows-1  p-3  font-Poppins">
+      <div className="container hidden mx-auto 2xl:hidden md:block xl:hidden font-Ubuntu ">
+        <div className="grid-rows-1 p-3 font-Poppins">
           <form
             onSubmit={handleSubmit(sendDataToAPI)}
             class="p-6  flex flex-col justify-center  "
@@ -95,10 +102,10 @@ function MdForm() {
                   id="name"
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Enter Your Name"
-                  className="form-control block w-full px-3 py-3 mt-3   font-semibold text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-pink-500 focus:outline-none"
+                  className="block w-full px-3 py-3 m-0 mt-3 font-semibold text-gray-700 transition ease-in-out bg-white border border-gray-300 border-solid rounded form-control bg-clip-padding focus:text-gray-700 focus:bg-white focus:border-pink-500 focus:outline-none"
                   name="name"
                 />
-                <p className="text-pink-500 font-Ubuntu font-semibold">
+                <p className="font-semibold text-pink-500 font-Ubuntu">
                   {errors.name?.message}
                 </p>
               </div>
@@ -110,10 +117,10 @@ function MdForm() {
                   id="email"
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter Your Email"
-                  className="form-control block w-full px-3 py-3 mt-3   font-semibold text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-pink-500 focus:outline-none "
+                  className="block w-full px-3 py-3 m-0 mt-3 font-semibold text-gray-700 transition ease-in-out bg-white border border-gray-300 border-solid rounded form-control bg-clip-padding focus:text-gray-700 focus:bg-white focus:border-pink-500 focus:outline-none "
                   name="email"
                 />
-                <p className="text-pink-500  font-semibold">
+                <p className="font-semibold text-pink-500">
                   {errors.email?.message}
                 </p>
               </div>
@@ -125,10 +132,10 @@ function MdForm() {
                   id="number"
                   onChange={(e) => setNumber(e.target.value)}
                   placeholder="Enter Your Mobile number"
-                  className="form-control block w-full px-3 py-3 mt-3   font-semibold text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-pink-500 focus:outline-none"
+                  className="block w-full px-3 py-3 m-0 mt-3 font-semibold text-gray-700 transition ease-in-out bg-white border border-gray-300 border-solid rounded form-control bg-clip-padding focus:text-gray-700 focus:bg-white focus:border-pink-500 focus:outline-none"
                   name="number"
                 />
-                <p className="text-pink-500  font-semibold">
+                <p className="font-semibold text-pink-500">
                   {errors.number?.message}
                 </p>
               </div>
@@ -143,7 +150,7 @@ function MdForm() {
                   class="form-control block w-full px-3 py-3 mt-3    font-semibold text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-pink-500 focus:outline-none"
                   name="textarea"
                 />
-                <p className="text-pink-500  font-semibold">
+                <p className="font-semibold text-pink-500">
                   {errors.textarea?.message}
                 </p>
               </div>
